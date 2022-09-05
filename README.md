@@ -9,7 +9,7 @@
 - using vmin in css
 - directions (x & y) in the broswer >>
     - x: left - negative; right - positive
-    - y: up - negative; right - positive
+    - y: up - negative; down - positive
 - keydown event >>
     - event keys: ArrowUp, ArrowDown, ArrowLeft, ArrowRight
 - working with grid in css
