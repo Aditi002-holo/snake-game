@@ -1,4 +1,5 @@
 import { update as updateSnake, draw as drawSnake, SNAKE_SPEED} from './snake.js';
+import { update as updateFood, draw as drawFood } from './food.js';
 
 
 let lastRenderTime = 0;
@@ -23,9 +24,12 @@ window.requestAnimationFrame(main);
 
 function update() {
     updateSnake();
+    updateFood();
 }
 
 function draw() {
+    // to refresh the gameboard to not act weirdly
     gameBoard.innerHTML = '';
     drawSnake(gameBoard);
+    drawFood(gameBoard);
 }
